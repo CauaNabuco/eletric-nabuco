@@ -657,7 +657,9 @@ main{
     margin-left: 0;
 }
 .card img{
+    height: 200px;
     width: 100%;
+    object-fit: cover;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
    
@@ -674,6 +676,7 @@ main{
     font-weight: 500;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.2s ;
+
 }
 .card p a:hover{
     border-radius: 15px;
@@ -716,6 +719,9 @@ main{
     .card{
     height: 350px;
     width: 300px;
+    }
+    .card img{
+        height: 150px;
     }
     .card p a{
         font-size: 15px;
@@ -826,46 +832,67 @@ main{
     width: 300px;
     margin-left: 30px;
     }
+    .card img{
+        height: 120px;
+    }
     .card p a{
         font-size: 12px;
     }
    #title-card{
-    font-size: 16px;
+    font-size: 14px;
    }
     #p-card{
         font-size: 12px;
     }
 }
 @media screen and (max-width:872px){
-    .card{
-    height: 280px;
-    width: 330px;
-    margin-left: 15px;
+      .card{
+    height: 350px;
+    width: 300px;
+    margin-left: 0px;
+   
+    }
+       .card img{
+        height: auto;
+    }
+    .cards{
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
     }
     .card p a{
-        font-size: 11px;
+        font-size: 15px;
     }
    #title-card{
-    font-size: 15px;
+    font-size: 20px;
    }
     #p-card{
-        font-size: 11px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width:822px){
-    .card{
-    height: 270px;
-    width: 330px;
+      .card{
+    height: 350px;
+    width: 300px;
+    margin-left: 0px;
    
     }
+       .card img{
+        height: auto;
+    }
+    .cards{
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
     .card p a{
-        font-size: 10px;
+        font-size: 15px;
     }
    #title-card{
-    font-size: 14px;
+    font-size: 20px;
    }
     #p-card{
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width:763px){
@@ -882,13 +909,13 @@ main{
         justify-content: center;
     }
     .card p a{
-        font-size: 9px;
+        font-size: 15px;
     }
    #title-card{
-    font-size: 14px;
+    font-size: 20px;
    }
     #p-card{
-        font-size: 9px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width:758px){
@@ -905,36 +932,36 @@ main{
         justify-content: center;
     }
     .card p a{
-        font-size: 9px;
+        font-size: 15px;
     }
    #title-card{
-    font-size: 14px;
+    font-size: 20px;
    }
     #p-card{
-        font-size: 9px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width:735px){
-    .card{
+   .card{
     height: 350px;
-    width: 280px;
+    width: 290px;
     margin-left: 0px;
    
     }
- 
+    
     .cards{
         flex-wrap: wrap;
         gap: 50px;
         justify-content: center;
     }
     .card p a{
-        font-size: 9px;
+        font-size: 15px;
     }
    #title-card{
-    font-size: 14px;
+    font-size: 20px;
    }
     #p-card{
-        font-size: 9px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width:712px){
@@ -985,7 +1012,7 @@ main{
 }
 @media screen and (max-width:652px){
     .card{
-    height: 370px;
+    height: 300px;
     width: 240px;
     margin-left: 0px;
    
@@ -1063,8 +1090,8 @@ main{
 }
 @media screen and (max-width:527px){
     .card{
-    height: 370px;
-    width: 450px;
+    height: 450px;
+    width: 400px;
     margin-left: 0px;
     
     }
@@ -1072,15 +1099,14 @@ main{
     width: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: 200px;
+    height: 250px;
 }
     .cards{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
     }
-    .card p a{
+    .card2 p a{
         font-size: 18px;
     }
    #title-card{
@@ -1096,9 +1122,9 @@ main{
     .title-nosso-serviços h2{
     padding: 2%;
     font-family: "Roboto", sans-serif;
-    font-size: 39px;
+    font-size: 35px;
 }
-   
+  
 }
 @media screen and (max-width:501px){
     .card{
