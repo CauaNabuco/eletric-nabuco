@@ -630,6 +630,7 @@ main{
     display: flex;
     padding: 50px 5%;
     background-color:#eff6ff ;
+    align-items: stretch;
 }
 .card{
     height: 420px;
@@ -639,7 +640,10 @@ main{
     background: var(--branco);
     margin-left: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 .card:last-child{
     margin-bottom: 30px;
@@ -657,8 +661,9 @@ main{
     margin-left: 0;
 }
 .card img{
-    height: 200px;
     width: 100%;
+  height: auto;
+  display: block;
     object-fit: cover;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -676,8 +681,10 @@ main{
     font-weight: 500;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.2s ;
+    
 
 }
+
 .card p a:hover{
     border-radius: 15px;
     color: var(--branco);
@@ -686,10 +693,12 @@ main{
 .conteudo-card{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between; /* 🔑 joga o botão pro rodapé */
+    flex: 1; /* ocupa todo o espaço restante */
     padding: 0px 10px;
     font-family: "Asap", sans-serif;
-    
+    height: 100px;
+    margin-bottom: 30px;
 }
 .conteudo-card h3{
     color: #011650;
@@ -730,9 +739,30 @@ main{
     font-size: 18px;
    }
     #p-card{
-        font-size: 15px;
+        font-size: 13px;
     }
   
+}
+@media screen and (max-width:1243px){
+    .card{
+    height: 350px;
+    width: 300px;
+    }
+    .card img{
+        height: 150px;
+    }
+    .card p a{
+        font-size: 15px;
+    }
+   #title-card{
+    font-size: 18px;
+   }
+    #p-card{
+        font-size: 13px;
+    }
+  .card .solar p a {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width:1200px){
     .card{
@@ -812,158 +842,326 @@ main{
     }
 }
 @media screen and (max-width:1055px){
-    .card{
-    height: 310px;
-    width: 300px;
-    }
-    .card p a{
-        font-size: 12px;
-    }
-   #title-card{
-    font-size: 17px;
-   }
-    #p-card{
-        font-size: 12px;
-    }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 20px;            
+    justify-content: center; 
+  }
+
+  .card {
+    flex: 1 1 300px;       
+    min-width: 350px;      
+    height: auto;         
+    margin: 0;           
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;         
+  }
+
+  #title-card {
+    font-size: 20px;
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
+  .card:last-child {
+    margin-bottom: 0;
+}
+
+
 }
 @media screen and (max-width:998px){
-    .card{
-    height: 290px;
-    width: 300px;
-    margin-left: 30px;
-    }
-    .card img{
-        height: 120px;
-    }
-    .card p a{
-        font-size: 12px;
-    }
-   #title-card{
-    font-size: 14px;
-   }
-    #p-card{
-        font-size: 12px;
-    }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 20px;            
+    justify-content: center; 
+  }
+
+  .card {
+    flex: 1 1 300px;       
+    min-width: 350px;     
+    min-height: 370px;         
+    margin: 0;             
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;         
+  }
+
+  #title-card {
+    font-size: 20px;
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
+  .card:last-child {
+    margin-bottom: 0;
 }
+
+
+}
+@media screen and (max-width:897px){
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;         
+    justify-content: center; 
+  }
+
+  .card {
+    flex: 1 1 300px;      
+    min-width: 350px;     
+    min-height: 370px;    
+    margin: 0;          
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;          
+  }
+
+  #title-card {
+    font-size: 20px;
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
+  .card:last-child {
+    margin-bottom: 0;
+}
+
+
+}
+
 @media screen and (max-width:872px){
-      .card{
-    height: 350px;
-    width: 300px;
-    margin-left: 0px;
-   
-    }
-       .card img{
-        height: auto;
-    }
-    .cards{
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 15px;
-    }
-   #title-card{
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;     
+    gap: 20px;           
+    justify-content: center; 
+  }
+
+  .card {
+    flex: 1 1 350px;      
+    min-width: 350px;     
+    min-height: 370px;   
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
     font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
 }
-@media screen and (max-width:822px){
-      .card{
-    height: 350px;
-    width: 300px;
-    margin-left: 0px;
-   
-    }
-       .card img{
-        height: auto;
-    }
-    .cards{
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 15px;
-    }
-   #title-card{
+
+@media screen and (max-width:815px){
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 10px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 350px;   
+    min-width: 340px;   
+    min-height: 370px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
     font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
 }
-@media screen and (max-width:763px){
-    .card{
-    height: 350px;
-    width: 300px;
-    margin-left: 0px;
-   
-    }
-   
-    .cards{
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 15px;
-    }
-   #title-card{
+@media screen and (max-width:748px){
+  .cards {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 10px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 320px;   
+    min-width: 320px;   
+    min-height: 370px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
     font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
 }
-@media screen and (max-width:758px){
-    .card{
-    height: 350px;
-    width: 290px;
-    margin-left: 0px;
-   
-    }
-    
-    .cards{
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 15px;
-    }
-   #title-card{
+@media screen and (max-width:720px){
+      .cards {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 10px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 300px;   
+    min-width: 300px;   
+    min-height: 370px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
     font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width:735px){
-   .card{
-    height: 350px;
-    width: 290px;
-    margin-left: 0px;
-   
-    }
-    
-    .cards{
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 15px;
-    }
-   #title-card{
+     .cards {
+    display: flex;
+    flex-wrap: wrap;       /* permite os cards quebrarem linha */
+    gap: 20px;             /* espaço entre os cards */
+    justify-content: center; /* centraliza os cards */
+  }
+
+  .card {
+    flex: 1 1 300px;       /* largura mínima 300px, cresce se possível */
+    max-width: 250px;      /* limita o tamanho máximo do card */
+    height: auto;          /* altura automática, evita cortar conteúdo */
+    margin: 0;             /* remove margin-left fixa */
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;          /* mantém proporção da imagem */
+  }
+
+  #title-card {
     font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
 }
+@media screen and (max-width: 872px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;             
+    justify-content: center;
+  }
+
+  .card {
+    flex: 1 1 300px;      
+    max-width: 250px;     
+    height: auto;          
+    margin: 0;             
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;          
+  }
+
+  #title-card {
+    font-size: 20px;
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
+}
+
 @media screen and (max-width:712px){
     .card{
     height: 370px;
@@ -974,7 +1172,7 @@ main{
   
     .cards{
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 10px;
         justify-content: center;
     }
     .card p a{
@@ -987,144 +1185,182 @@ main{
         font-size: 15px;
     }
 }
-@media screen and (max-width:670px){
-    .card{
-    height: 370px;
-    width: 260px;
-    margin-left: 0px;
-   
-    }
-  
-    .cards{
-        flex-wrap: wrap;
-        gap: 40px;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 15px;
-    }
-   #title-card{
-    font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
-}
-@media screen and (max-width:652px){
-    .card{
-    height: 300px;
-    width: 240px;
-    margin-left: 0px;
-   
-    }
-  
-    .cards{
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        display: block;
-        display: flex;
-    }
-    .card p a{
-        font-size: 15px;
-    }
-   #title-card{
-    font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
-
-}
-
-@media screen and (max-width:570px){
-    .card{
-     height: 350px;
-    width: 230px;
-    margin-left: 0px;
-   
-    }
-  
-    .cards{
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        display: block;
-        display: flex;
-    }
-    .card2 p a{
-        font-size: 15px;
-    }
-   #title-card{
-    font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
-}
-@media screen and (max-width:549px){
-    .card{
-    height: 350px;
-    width: 220px;
-    margin-left: 0px;
-   
-    }
-  
-    .cards{
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        display: block;
-        display: flex;
-    }
-    .card p a{
-        font-size: 15px;
-    }
-   #title-card{
-    font-size: 20px;
-   }
-    #p-card{
-        font-size: 15px;
-    }
-
-}
-@media screen and (max-width:527px){
-    .card{
-    height: 450px;
-    width: 400px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 250px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card2 p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
+@media screen and (max-width:672px){
+  .cards {
     display: flex;
-    padding: 10px 5%;
+    flex-wrap: wrap;    
+    gap: 5px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 290px;   
+    min-width: 290px;   
+    min-height: 370px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
+    font-size: 20px;
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
 }
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 35px;
+
+
+
+@media screen and (max-width:652px){
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 5px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 290px;   
+    min-width: 290px;   
+    min-height: 370px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
+    font-size: 20px;
+  }
+
+  #p-card {
+    font-size: 15px;
+  }
+
+  .card p a {
+    font-size: 15px;
+  }
 }
-  
+
+
+@media screen and (max-width:600px){
+.cards {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 500px;   
+    min-width: 500px;   
+    min-height: 500px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
+    font-size: 30px;
+  }
+
+  #p-card {
+    font-size: 20px;
+  }
+
+  .card p a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:549px){
+    .cards {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 450px;   
+    min-width: 450px;   
+    min-height: 500px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
+    font-size: 30px;
+  }
+
+  #p-card {
+    font-size: 20px;
+  }
+
+  .card p a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:517px){
+    .cards {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 400px;   
+    min-width: 400px;   
+    min-height: 470px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
+    font-size: 30px;
+  }
+
+  #p-card {
+    font-size: 20px;
+  }
+
+  .card p a {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width:501px){
     .card{
@@ -1164,422 +1400,144 @@ main{
 }
   
 }
-@media screen and (max-width:480px){
-     .card{
-    height: 400px;
-    width: 350px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
-    display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 35px;
-}
-
-}
 @media screen and (max-width:460px){
-         .card{
-    height: 400px;
-    width: 390px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
+    .cards {
     display: flex;
-    padding: 10px 5%;
+    flex-wrap: wrap;    
+    gap: 20px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 350px;   
+    min-width: 350px;   
+    min-height: 450px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
+    font-size: 30px;
+  }
+
+  #p-card {
+    font-size: 20px;
+  }
+
+  .card p a {
+    font-size: 20px;
+  }
 }
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 35px;
+@media screen and (max-width:410px){
+    .cards {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 300px;   
+    min-width: 300px;   
+    min-height: 430px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
+    width: 100%;
+    height: auto;        
+  }
+
+  #title-card {
+    font-size: 30px;
+  }
+
+  #p-card {
+    font-size: 20px;
+  }
+
+  .card p a {
+    font-size: 20px;
+  }
 }
 
-}
-@media screen and (max-width:450px){
-    .card{
-    height: 400px;
-    width: 390px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
+
+@media screen and (max-width:348px){
+    .cards {
     display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 35px;
-}
-}
-@media screen and (max-width:437px){
-   .card{
-    height: 400px;
-    width: 370px;
-    margin-left: 0px;
-    
-    }
-  .card img{
+    flex-wrap: wrap;    
+    gap: 20px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    flex: 1 1 290px;   
+    min-width: 290px;   
+    min-height: 410px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
     width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
+    height: auto;        
+  }
+
+  #title-card {
     font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
-    display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 35px;
+  }
+
+  #p-card {
+    font-size: 17px;
+  }
+
+  .card p a {
+    font-size: 17px;
+  }
 }
 
-}
-@media screen and (max-width:425px){
-    .card{
-    height: 400px;
-    width: 360px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
+@media screen and (max-width:348px){
+    .cards {
     display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 35px;
-}
+    flex-wrap: wrap;    
+    gap: 20px;         
+    justify-content: center;
+    padding: 50px 0;
+  }
 
-}
-@media screen and (max-width:400px){
- .card{
-    height: 400px;
-    width: 340px;
-    margin-left: 0px;
-    
-    }
-  .card img{
+  .card {
+    flex: 1 1 250px;   
+    min-width: 250px;   
+    min-height: 370px;    
+    margin: 0;            
+  }
+
+  .card img,
+  .card > img {
     width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
-    display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 35px;
-}
+    height: auto;        
+  }
 
-}
-@media screen and (max-width:379px){
-  .card{
-    height: 400px;
-    width: 300px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
-    display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 28px;
-}
+  #title-card {
+    font-size: 22px;
+  }
 
-}
-@media screen and (max-width:359px){
-  .card{
-    height: 400px;
-    width: 300px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
-    display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 28px;
-}
+  #p-card {
+    font-size: 16px;
+  }
 
-}
-@media screen and (max-width:346px){
-    .card{
-    height: 400px;
-    width: 290px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 200px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
-    display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 28px;
-}
-
-}
-@media screen and (max-width:323px){
-    .card{
-    height: 400px;
-    width: 260px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 190px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
-    display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 25px;
-}
-
-}
-@media screen and (max-width:300px){
-    .card{
-    height: 400px;
-    width: 240px;
-    margin-left: 0px;
-    
-    }
-  .card img{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 190px;
-}
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card p a{
-        font-size: 18px;
-    }
-   #title-card{
-    font-size: 25px;
-   }
-    #p-card{
-        font-size: 18px;
-    }
-      .cards{
-    display: flex;
-    padding: 10px 5%;
-}
-    .title-nosso-serviços h2{
-    padding: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 27px;
-}
-
+  .card p a {
+    font-size: 16px;
+  }
 }
     /*SOBRE ELETRIC NABUCO*/
 #conteiner-sobre{
