@@ -695,16 +695,18 @@ main{
     flex-direction: column;
     justify-content: space-between; /* 🔑 joga o botão pro rodapé */
     flex: 1; /* ocupa todo o espaço restante */
-    padding: 0px 10px;
+    padding: 10px 10px 0px 10px;
     font-family: "Asap", sans-serif;
     height: 100px;
     margin-bottom: 30px;
+
 }
 .conteudo-card h3{
     color: #011650;
 }
 .conteudo-card p{
     color: #272c33;
+
 }
 
 @media screen and (max-width:1400px){
@@ -1446,7 +1448,7 @@ main{
   .card {
     flex: 1 1 300px;   
     min-width: 300px;   
-    min-height: 430px;    
+    min-height: 350px;    
     margin: 0;            
   }
 
@@ -1457,15 +1459,15 @@ main{
   }
 
   #title-card {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   #p-card {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .card p a {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -1482,7 +1484,7 @@ main{
   .card {
     flex: 1 1 290px;   
     min-width: 290px;   
-    min-height: 410px;    
+    min-height: 330px;    
     margin: 0;            
   }
 
@@ -1497,11 +1499,11 @@ main{
   }
 
   #p-card {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .card p a {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
@@ -1517,7 +1519,7 @@ main{
   .card {
     flex: 1 1 250px;   
     min-width: 250px;   
-    min-height: 370px;    
+    min-height: 330px;    
     margin: 0;            
   }
 
@@ -1532,11 +1534,11 @@ main{
   }
 
   #p-card {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .card p a {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
     /*SOBRE ELETRIC NABUCO*/
