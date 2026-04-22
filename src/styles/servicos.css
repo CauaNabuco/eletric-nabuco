@@ -1,0 +1,122 @@
+.servicos {
+    padding: 50px 3%;
+}
+.servicos h2 {
+    font-size: 20px;
+    color: var(--cor-texto1);
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.card-item{
+    background-color: rgb(209, 209, 209);
+    width: 23.5%;
+    height: 400px;
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.118) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 2% 1%;
+    gap: 5px;
+    transition: transform 0.3s ease;
+}
+.card-item:hover{
+    transform: translateY(-8px);
+}
+#carrossel-card{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#card-item1{
+    background-image: url(../images/energia-solar.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 5px;
+}
+.info-card p{
+    font-size: 20px;
+}
+.btn-card{
+    background-color: var(--cor-primaria);
+    color: aliceblue;
+    padding: 2px 15px 4px 15px;
+    border-radius: 20px;
+}
+.btn-card:hover{
+    background-color:rgba(213, 213, 213, 0.088);
+    outline: 1px solid rgb(213, 213, 213);
+    color: aliceblue;
+    border-radius: 15px;
+    transform: translateY(-1.5px);
+}
+.btn-card a{
+    color: aliceblue;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--cor-primaria); 
+
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px; 
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--cor-primaria);
+}
+@media screen and (max-width: 1120px){
+    .card-item{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 849px){
+    .card-item{
+        height: 400px;
+        padding: 5% 2%;
+    }
+}
+@media screen and (max-width: 572px){
+    .card-item{
+        height: 350px;
+    }
+    .swiper-button-prev,.swiper-button-next{
+        display: none;
+    }
+}
+@media screen and (max-width: 527px){
+    .card-item{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 550px){
+    .card-item{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 400px){
+    .card-item{
+        height: 250px;
+    }
+    .info-card p{
+    font-size: 15px;
+}
+}
+@media screen and (max-width: 380px){
+    .card-item{
+        height: 230px;
+    }
+    .info-card p{
+    font-size: 15px;
+}
+}

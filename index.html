@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletric Nabuco</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="src/images/favicon-eletric-nabuco.png" type="image/x-icon">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/banner-inicial.css">
+    <link rel="stylesheet" href="src/styles/servicos.css">
+    <link rel="stylesheet" href="src/styles/sobre.css">
+    <link rel="stylesheet" href="src/styles/perguntas.css">
+    <link rel="stylesheet" href="src/styles/banner-orcamento.css">
+    <link rel="stylesheet" href="src/styles/empresas-parceiras.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+</head>
+<body>
+
+    <header>
+        <nav id="nav-bar">
+            <div>
+                <a href="index.html">
+                    <img id="logo" src="src/images/logo-eletric-nabuco.jpg" alt="logo Eletric Nabuco">
+                </a>
+            </div > 
+            <ul id="nav-list">
+                <li class="nav-item active">
+                    <a href="#inicio">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#perguntas">Perguntas</a>
+                </li>
+            </ul>
+
+            <a href="#" id="btn-header" >
+                Orçamento <span id="seta">↗</span>
+            </a>
+            <button id="btn-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu">
+            <ul id="nav-list-mobile">
+                <li class="nav-item">
+                    <a href="#inicio"><p>Início</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Diferencial</a>
+                </li>
+            </ul>
+            <a href="#" id="btn-orcamento-mobile">
+                Orçamento
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="container-banner-inicial">
+            <div id="banner-inicial">
+                <div id="paragrafo">
+                    <div id="icon">
+                        <img src="src/images/icon-asterisco.png" alt="icone">
+                    </div>
+                    <div id="text">
+                        <p>Conte com especialistas para garantir eficiência e segurança em cada projeto, priorizando a otimização e a eficiência para cada cliente!</p>
+                    </div>
+                </div>
+                <div id="titulo">
+                    <h1>Soluções Elétricas</h1>
+                </div>
+            </div>
+        </section>
+        
+        <section class="servicos swiper" id="servicos">
+                <h2><strong>Principais serviços</strong></h2>
+            
+                <div class="carrossel-card swiper-wrapper">
+            
+                    <article class="card-item swiper-slide" id="card-item1">
+                         <div class="info-card">
+                            <p>Energia Solar</p>
+                        </div>
+                        <a href="">
+                            <div class="btn-card">
+                                <p>→</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card-item swiper-slide" id="card-item2">
+                         <div class="info-card">
+                            <p>SPDA (para-raio)</p>
+                        </div>
+                        <a href="">
+                            <div class="btn-card">
+                                <p>→</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card-item swiper-slide" id="card-item3">
+                         <div class="info-card">
+                            <p>Projéto Elétrico</p>
+                        </div>
+                        <a href="">
+                            <div class="btn-card">
+                                <p>→</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card-item swiper-slide" id="card-item4">
+                         <div class="info-card">
+                            <p>Automação</p>
+                        </div>
+                        <a href="">
+                            <div class="btn-card">
+                                <p>→</p>
+                            </div>
+                        </a>
+                    </article>
+                     
+
+                
+
+            </div>
+                <div class="swiper-pagination"></div>
+
+                   <!--
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>-->
+
+        </section>
+
+        <section id="sobre">
+            <div id="conheca">
+                <div id="container-titulo-sobre">
+                    <div id="titulo-sobre">
+                        <h2><strong>Conheça quem somos</strong></h2>
+                    </div>
+                    <div id="logo-sobre">
+                        <img src="src/images/favicon-eletric-nabuco.png" alt="logo">
+                    </div>
+                </div>
+                <div id="conteudo-sobre">
+                    <p>Somos uma empresa especializada em soluções elétricas, oferecendo serviços com qualidade, segurança e eficiência para residências, comércios e indústrias. Atuamos com projetos elétricos, instalações, manutenção, energia solar, automação e sistemas de proteção como SPDA (para-raios). Nosso diferencial está no compromisso com a segurança, no uso de tecnologias modernas e na execução de projetos personalizados para cada cliente. Trabalhamos há 4 anos com foco em resultados e em nossos clientes satisfeito, seguindo normas técnicas e garantindo eficiência energética em cada projeto.</p>
+                </div>
+            </div>
+            <div id="equipe">
+                <div id="titulo-equipe">
+                    <h2><strong>Nosso time especializado</strong></h2>
+                </div>
+                <div id="conteudo-equipe">
+                    <div class="perfil">
+                        <div class="foto-perfil">
+                            <img src="src/images/foto-perfil.jpg" alt="Foto eng. Jonas Nabuco">
+                        </div>
+                        <div class="info-perfil">
+                            <p>Eng. Jonas Nabuco</p>
+                        </div>
+                    </div>
+                    <div class="perfil">
+                        <div class="foto-perfil">
+                            <img src="src/images/foto-perfil.jpg" alt="Foto eng. Jonas Nabuco">
+                        </div>
+                        <div class="info-perfil">
+                            <p>Eng. Jonas Nabuco</p>
+                        </div>
+                    </div>
+                    <div class="perfil">
+                        <div class="foto-perfil">
+                            <img src="src/images/foto-perfil.jpg" alt="Foto eng. Jonas Nabuco">
+                        </div>
+                        <div class="info-perfil">
+                            <p>Eng. Jonas Nabuco</p>
+                        </div>
+                    </div>
+                    <div class="perfil">
+                        <div class="foto-perfil">
+                            <img src="src/images/foto-perfil.jpg" alt="Foto eng. Jonas Nabuco">
+                        </div>
+                        <div class="info-perfil">
+                            <p>Eng. Jonas Nabuco</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="perguntas">
+            
+                <div id="image-perguntas">
+                
+                </div>
+            
+            <div id="pergunta-container">
+                <div class="pergunta">
+                    <button class="pergunta-header">
+                        <span><p>Por quê nos contratar?</p></span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="pergunta-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque praesentium tenetur voluptatum suscipit quae cupiditate amet ratione possimus at hic reprehenderit voluptates, eum, cumque nulla saepe, iusto necessitatibus ea!
+                        </p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <button class="pergunta-header">
+                        <span><p>Por quê nos contratar?</p></span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="pergunta-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque praesentium tenetur voluptatum suscipit quae cupiditate amet ratione possimus at hic reprehenderit voluptates, eum, cumque nulla saepe, iusto necessitatibus ea!
+                        </p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <button class="pergunta-header">
+                        <span><p>Por quê nos contratar?</p></span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="pergunta-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque praesentium tenetur voluptatum suscipit quae cupiditate amet ratione possimus at hic reprehenderit voluptates, eum, cumque nulla saepe, iusto necessitatibus ea!
+                        </p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <button class="pergunta-header">
+                        <span><p>Por quê nos contratar?</p></span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="pergunta-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque praesentium tenetur voluptatum suscipit quae cupiditate amet ratione possimus at hic reprehenderit voluptates, eum, cumque nulla saepe, iusto necessitatibus ea!
+                        </p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <button class="pergunta-header">
+                        <span><p>Por quê nos contratar?</p></span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="pergunta-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque praesentium tenetur voluptatum suscipit quae cupiditate amet ratione possimus at hic reprehenderit voluptates, eum, cumque nulla saepe, iusto necessitatibus ea!
+                        </p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                        <button class="pergunta-header">
+                            <span><p>Por quê nos contratar?</p></span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="pergunta-body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque praesentium tenetur voluptatum suscipit quae cupiditate amet ratione possimus at hic reprehenderit voluptates, eum, cumque nulla saepe, iusto necessitatibus ea!
+                            </p>
+                        </div>
+                </div>
+                <div class="pergunta">
+                    <button class="pergunta-header">
+                        <span><p>Por quê nos contratar?</p></span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="pergunta-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque praesentium tenetur voluptatum suscipit quae cupiditate amet ratione possimus at hic reprehenderit voluptates, eum, cumque nulla saepe, iusto necessitatibus ea!
+                        </p>
+                    </div>
+                </div>
+
+        </section>
+
+        <section id="container-banner-orcamento">
+            <div id="banner-orcamento">
+                <div id="conteudo">
+                    <h2>Faça seu orçemento totalmente gratuito em apenas alguns minutos</h2>
+                </div>
+                <div id="btn-banner">
+                    <a href="#">Solicite seu orçamento</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="container-footer">
+            <div id="footer-logo">
+                <a href="index.html"><img src="src/images/logo-eletric-nabuco.png" alt="logo"></a>
+                <div id="footer-info">
+                <p class="p-footer">© 2026 Eletric Nabuco. Todos os direitos reservados.</p>
+                <p class="p-footer">Rua Exemplo, 123 - Cidade, Estado</p>
+                <p class="p-footer">Email: contato@eletricnabuco.com.br</p>
+            </div>
+            </div>
+            <div id="linha"><hr></div>
+            <div class="container-menus">
+                <div id="menu">
+                    <h3 class="titulo-footer" class="topico">Menu</h3>
+                    <ul>
+                        <li><a class="p-footer" href="#inicio">Início</a></li>
+                        <li><a class="p-footer" href="#servicos">Serviços</a></li>
+                        <li><a class="p-footer" href="#sobre">Sobre</a></li>
+                        <li><a class="p-footer" href="#perguntas">Perguntas</a></li>
+                    </ul>
+                </div>
+                <div id="servicos" class="topico">
+                    <h3 class="titulo-footer">Serviços</h3>
+                    <ul>
+                        <li><a class="p-footer" href="#">Energia Solar</a></li>
+                        <li><a class="p-footer" href="#">SPDA (para-raio)</a></li>
+                        <li><a class="p-footer" href="#">Projéto Elétrico</a></li>
+                        <li><a class="p-footer" href="#">Automação</a></li>
+                    </ul>
+                </div>
+                <div id="contatos" class="topico">
+                    <h3 class="titulo-footer">Contatos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        <div id="criador">
+            <p>Desenvolvido por <a href="https://www.linkedin.com/in/cauã-nabuco" target="_blank">Cauã Nabuco</a></p>
+        </div>
+
+
+    </footer>
+
+    <script src="src/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="src/javascript/swiper.js"></script>
+    <script src="src/javascript/acordion.js"></script>
+    <script src="src/javascript/empresas.js"></script>
+</body>
+</html>

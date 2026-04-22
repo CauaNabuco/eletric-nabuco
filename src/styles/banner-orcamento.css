@@ -1,0 +1,143 @@
+#container-banner-orcamento{
+    padding:50px 0px;
+    display: flex;
+    justify-content: center;
+}
+#banner-orcamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 94%;
+    height: 500px;
+    background-image: linear-gradient(-20deg, #2a47ae  0%,var(--cor-primaria)100%);
+    border-radius: var(--border-radius);
+    padding: 3%;
+    gap: 50px;
+}
+#conteudo h2{
+    color: aliceblue;
+    font-size: 70px;
+    text-align: center;
+}
+#btn-banner a{
+    padding: 15px;
+    color: var(--cor-primaria);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    background-color: aliceblue;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: 0.3s ease;
+}
+#btn-banner a:hover{
+    background-color:transparent;
+    outline: 1px solid rgb(213, 213, 213);
+    color: aliceblue;
+    transform: scale(1.09); 
+}
+@media screen and (max-width: 1277px){
+    #conteudo h2{
+        font-size: 60px;
+        
+    }
+}
+@media screen and (max-width: 1084px){
+    #conteudo h2{
+        font-size: 55px;
+        
+    }
+}
+@media screen and (max-width: 959px){
+    #conteudo h2{
+        font-size: 50px;
+        
+    }
+}
+
+@media screen and (max-width: 863px){
+    #conteudo h2{
+        font-size: 45px;
+        
+    }
+    #banner-orcamento{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 770px){
+    #conteudo h2{
+        font-size: 40px;
+        
+    }
+    #btn-banner a{
+        font-size: 16px;
+        
+    }
+}
+@media screen and (max-width: 676px){
+    #conteudo h2{
+        font-size: 35px;
+        
+    }
+    #btn-banner a{
+        font-size: 16px;
+        
+    }
+    #banner-orcamento{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 638px){
+    #conteudo h2{
+        font-size: 30px;
+        
+    }
+
+}
+@media screen and (max-width: 578px){
+    #conteudo h2{
+        font-size: 35px;
+        
+    }
+    #btn-banner a{
+        font-size: 16px;
+        
+    }
+    #banner-orcamento{
+        height: 320px;
+    }
+}
+@media screen and (max-width: 484px){
+    #conteudo h2{
+        font-size: 35px;
+        
+    }
+    #btn-banner a{
+        font-size: 16px;
+        
+    }
+}
+@media screen and (max-width: 435px){
+    #conteudo h2{
+        font-size: 30px;
+        
+    }
+    #btn-banner a{
+        font-size: 16px;
+        
+    }
+    
+}
+@media screen and (max-width: 392px){
+    #conteudo h2{
+        font-size: 20px;
+        
+    }
+    #btn-banner a{
+        font-size: 16px;
+        
+    }
+     #banner-orcamento{
+        height: 250px;
+    }
+}

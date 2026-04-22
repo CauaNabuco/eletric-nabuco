@@ -1,0 +1,207 @@
+#sobre{
+    display: flex;
+    gap: 30px;
+    padding: 50px 3%;
+}
+#conheca{
+    padding:2% 1%;
+    width: 50%;
+    border-radius: var(--border-radius);
+    background-color: var(--cor-fundo);
+}
+#container-titulo-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#container-titulo-sobre h2{
+    font-size: 20px;
+    color: var(--cor-texto1);
+    font-weight: 500;
+}
+#logo-sobre img{
+    width: 23px;
+    transition: transform 0.2s ease;
+}
+#logo-sobre img:hover{
+    transform: scale(1.08); 
+}
+#conteudo-sobre p{
+    color: #444;
+}
+#equipe{
+    padding:2% 1%;
+    width: 50%;
+    border-radius: var(--border-radius);
+    background-color: var(--cor-primaria);
+}
+
+#titulo-equipe h2{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+#conteudo-equipe{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.foto-perfil img{
+    width: 150px;
+    border-radius: 50%;
+}
+.info-perfil p{
+    font-size: 13px;
+    color: #f0f8ff;
+}
+@media screen and (max-width:1500px){
+    .foto-perfil img{
+        width: 120px;
+    }
+    #conteudo-equipe{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:1286px){
+    .foto-perfil img{
+        width: 110px;
+    }
+    .info-perfil p{
+        font-size: 12px;
+    }
+    #conteudo-sobre p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1159px){
+    .foto-perfil img{
+        width: 100px;
+    }
+    .info-perfil p{
+        font-size: 11px;
+    }
+    #conteudo-sobre p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:1070px){
+    .foto-perfil img{
+        width: 90px;
+    }
+    .info-perfil p{
+        font-size: 10px;
+    }
+    #conteudo-sobre p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:984px){
+    .foto-perfil img{
+        width: 130px;
+    }
+    .info-perfil p{
+        font-size: 13px;
+    }
+    #conteudo-sobre p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:850px){
+    #sobre{
+        flex-direction: column;
+    }
+    #conheca{
+        width: 100%;
+        padding: 4% 2%;
+    }
+    #equipe{
+        width: 100%;
+        padding: 4% 2%;
+    }
+}
+@media screen and (max-width:660px){
+    .foto-perfil img{
+        width: 110px;
+    }
+    .info-perfil p{
+        font-size: 12px;
+    }
+    #conteudo-sobre p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:571px){
+    .foto-perfil img{
+        width: 90px;
+    }
+    .info-perfil p{
+        font-size: 12px;
+    }
+    #conteudo-sobre p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:545px){
+    .foto-perfil img{
+        width: 85px;
+    }
+    .info-perfil p{
+        font-size: 11px;
+    }
+    #conteudo-sobre p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:504px){
+    .foto-perfil img{
+        width: 70px;
+    }
+    .info-perfil p{
+        font-size: 10px;
+    }
+    #conteudo-sobre p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:467px){
+    .foto-perfil img{
+        width: 65px;
+    }
+    .info-perfil p{
+        font-size: 9px;
+    }
+    #conteudo-sobre p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:426px){
+    .foto-perfil img{
+        width: 125px;
+    }
+    .info-perfil p{
+        font-size: 12px;
+    }
+    #conteudo-sobre p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:317px){
+    .foto-perfil img{
+        width: 100px;
+    }
+    .info-perfil p{
+        font-size: 11px;
+    }
+    #conteudo-sobre p{
+        font-size: 13px;
+    }
+}
