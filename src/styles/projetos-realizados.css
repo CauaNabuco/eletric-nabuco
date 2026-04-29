@@ -1,0 +1,98 @@
+#card-item1{
+    background-image: url(../images/energia-solar.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+#card-item2{
+    background-image: url(../images/energia-solar-projeto.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+#card-item3{
+    background-image: url(../images/energia-solar-projeto23jpg.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+#card-item4{
+    background-image: url(../images/energia-solar-projeto2.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+#card-item5{
+    background-image: url(../images/energia-solar-projeto1.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+
+#descrição-serviço{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 3%;
+    
+}
+#conteudo-serviço{
+    background-color: var(--cor-fundo);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+#titulo-serviço{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#titulo-serviço h2{
+    font-size: 20px;
+    color: var(--cor-texto1);
+    font-weight: 500;
+}
+#titulo-serviço img{
+    width: 23px;
+    transition: transform 0.2s ease;
+}
+#titulo-serviço img:hover{
+    transform: scale(1.08); 
+}
+@media screen and (max-width: 611px){
+    #titulo-serviço h2{
+        font-size: 17px;
+    }
+    #paragrafo-serviço p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 447px){
+    #titulo-serviço h2{
+        font-size: 16px;
+    }
+    #paragrafo-serviço p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 447px){
+    #titulo-serviço h2{
+        font-size: 16px;
+    }
+    #paragrafo-serviço p{
+        font-size: 12px;
+    }
+}

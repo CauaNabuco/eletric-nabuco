@@ -37,7 +37,46 @@
    
 
 } 
+#card-item2{
+    background-image: url(../images/image-projeto\ eletrico.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
 
+} 
+#card-item3{
+    background-image: url(../images/para-raio.webp);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+#card-item4{
+    background-image: url(../images/subestacao-aerea.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+#card-item5{
+    background-image: url(../images/medicao-agrupada.png);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
+#card-item6{
+    background-image: url(../images/image-automão.jpg);
+    background-size: cover;
+    background-position: center 62%;
+    background-repeat: no-repeat;
+   
+
+} 
 .info-card{
     display: flex;
     flex-direction: column;

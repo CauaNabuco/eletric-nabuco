@@ -68,7 +68,7 @@
 #image-perguntas{
     width: 30%;
     height:500px;
-    background-color: gray;
+    background-image: url(../images/faq1.png);
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;

@@ -1,0 +1,40 @@
+#banner-inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 94%;
+    height: 500px;
+    background-color: var(--cor-primaria);
+    border-radius: var(--border-radius);
+    background-image: url(../images/energia-solar.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 30px 3%;
+
+}
+@media screen and (max-width: 911px){
+    #banner-inicial{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 700px){
+    #banner-inicial{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 457px){
+    #banner-inicial{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 457px){
+    #banner-inicial{
+        height: 230px;
+    }
+}
+@media screen and (max-width: 382px){
+    #banner-inicial{
+        height: 200px;
+    }
+}

@@ -4,7 +4,7 @@
     padding: 50px 3%;
 }
 #conheca{
-    padding:2% 1%;
+    padding:2% 2%;
     width: 50%;
     border-radius: var(--border-radius);
     background-color: var(--cor-fundo);
@@ -30,89 +30,149 @@
 #conteudo-sobre p{
     color: #444;
 }
-#equipe{
-    padding:2% 1%;
+#responsavel{
     width: 50%;
+    height: 100%;
+    background-color: var(--cor-fundo);
+    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+
+}
+#container-responsavel{
     border-radius: var(--border-radius);
     background-color: var(--cor-primaria);
-}
 
-#titulo-equipe h2{
-    font-size: 20px;
-    color: white;
-    padding-bottom: 20px;
-    font-weight: 500;
 }
-#conteudo-equipe{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.perfil{
+#container-conteudo{
+    padding:4% 4%;
+    height: 90%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+#container-crea{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+    height: 10%;
+    width: 100%;
+    background-color: var(--cor-fundo);
+    padding:1% 2%;
+    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+    font-size: 14px;
+    color: #444;
 }
-.foto-perfil img{
-    width: 150px;
-    border-radius: 50%;
+#btn-responsavel{
+    display: flex;
+    justify-content: space-between;
+    
 }
-.info-perfil p{
+#btn-responsavel a{
+    background-color:rgb(240, 238, 238);
+    color: var(--cor-texto1);
+    padding: 13px 14%;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+#btn-responsavel a:hover{
+    transform: scale(1.03);
+}
+#titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#titulo h2{
     font-size: 13px;
-    color: #f0f8ff;
+    color: rgb(208, 208, 208);
+    font-weight: 300;
 }
+#perfil-responsavel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#foto-perfil img{
+    width: 100px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+
+}
+#foto-perfil img:hover{
+    transform: scale(1.02); 
+}
+#descricao{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#descricao h3{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+#descricao p{
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(208, 208, 208);
+}
+
+
 @media screen and (max-width:1500px){
-    .foto-perfil img{
-        width: 120px;
-    }
-    #conteudo-equipe{
-        justify-content: space-around;
+    
+    #btn-responsavel a{
+        padding: 13px 13%;
     }
 }
 @media screen and (max-width:1286px){
-    .foto-perfil img{
-        width: 110px;
-    }
-    .info-perfil p{
-        font-size: 12px;
-    }
+   
     #conteudo-sobre p{
         font-size: 14px;
     }
+    #btn-responsavel a{
+        padding: 13px 12%;
+    }
 }
 @media screen and (max-width:1159px){
-    .foto-perfil img{
-        width: 100px;
-    }
-    .info-perfil p{
-        font-size: 11px;
-    }
     #conteudo-sobre p{
         font-size: 13px;
     }
+    
 }
-@media screen and (max-width:1070px){
-    .foto-perfil img{
-        width: 90px;
-    }
-    .info-perfil p{
-        font-size: 10px;
-    }
+@media screen and (max-width:1090px){
+    
     #conteudo-sobre p{
         font-size: 12px;
     }
+    #btn-responsavel a{
+        padding: 13px 11%;
+    }
+}
+@media screen and (max-width:1012px){
+    
+  
+    #btn-responsavel a{
+        padding: 13px 9%;
+    }
 }
 @media screen and (max-width:984px){
-    .foto-perfil img{
-        width: 130px;
-    }
-    .info-perfil p{
-        font-size: 13px;
-    }
+    
     #conteudo-sobre p{
         font-size: 16px;
+    }
+    #sobre{
+        flex-direction: column;
+    }
+    #conheca{
+        width: 100%;
+        padding: 4% 2%;
+    }
+    #responsavel{
+        width: 100%;
+    }
+    #btn-responsavel a{
+        padding: 13px 15%;
     }
 }
 @media screen and (max-width:850px){
@@ -123,85 +183,119 @@
         width: 100%;
         padding: 4% 2%;
     }
-    #equipe{
-        width: 100%;
-        padding: 4% 2%;
+    
+}
+@media screen and (max-width:703px){
+     #btn-responsavel a{
+        padding: 13px 13%;
     }
+    
 }
 @media screen and (max-width:660px){
-    .foto-perfil img{
-        width: 110px;
-    }
-    .info-perfil p{
-        font-size: 12px;
-    }
+   
     #conteudo-sobre p{
         font-size: 15px;
     }
 }
-@media screen and (max-width:571px){
-    .foto-perfil img{
-        width: 90px;
-    }
-    .info-perfil p{
-        font-size: 12px;
-    }
+@media screen and (max-width:585px){
+    
     #conteudo-sobre p{
         font-size: 15px;
+    }
+    #btn-responsavel a{
+        padding: 13px 11%;
     }
 }
 @media screen and (max-width:545px){
-    .foto-perfil img{
-        width: 85px;
-    }
-    .info-perfil p{
-        font-size: 11px;
-    }
+    
     #conteudo-sobre p{
         font-size: 14px;
     }
 }
-@media screen and (max-width:504px){
-    .foto-perfil img{
-        width: 70px;
-    }
-    .info-perfil p{
-        font-size: 10px;
-    }
+@media screen and (max-width:507px){
+    
     #conteudo-sobre p{
         font-size: 14px;
+    }
+    #btn-responsavel a{
+        padding: 13px 9%;
     }
 }
 @media screen and (max-width:467px){
-    .foto-perfil img{
-        width: 65px;
-    }
-    .info-perfil p{
-        font-size: 9px;
-    }
+    
     #conteudo-sobre p{
         font-size: 13px;
+    }
+    #btn-responsavel a{
+        padding: 13px 7%;
     }
 }
 @media screen and (max-width:426px){
-    .foto-perfil img{
-        width: 125px;
-    }
-    .info-perfil p{
-        font-size: 12px;
-    }
+    
     #conteudo-sobre p{
         font-size: 13px;
     }
 }
-@media screen and (max-width:317px){
-    .foto-perfil img{
-        width: 100px;
-    }
-    .info-perfil p{
-        font-size: 11px;
-    }
+@media screen and (max-width:398px){
+    
     #conteudo-sobre p{
+        font-size: 13px;
+    }
+    #btn-responsavel a{
+        padding: 13px 5%;
+    }
+}
+@media screen and (max-width:359px){
+    
+    #conteudo-sobre p{
+        font-size: 13px;
+    }
+    #btn-responsavel a{
+        padding: 11px 4%;
+    }
+}
+@media screen and (max-width:350px){
+    
+    #conteudo-sobre p{
+        font-size: 13px;
+    }
+    #btn-responsavel a{
+        padding: 11px 3%;
+    }
+}
+@media screen and (max-width:330px){
+    
+    #conteudo-sobre p{
+        font-size: 13px;
+    }
+    #btn-responsavel {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #btn-responsavel a{
+        text-align: center;
+        background-color: rgb(228, 226, 226);
+    }
+    #btn-responsavel a:last-child{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:317px){
+    
+    #conteudo-sobre p{
+        font-size: 13px;
+    }
+    #descricao h3{
+        font-size: 13px;
+        font-weight: 300;
+        color: white;
+    }
+    
+    #descricao p{
+        font-size: 10px;
+        font-weight: 300;
+        color: rgb(208, 208, 208);
+    }#btn-responsavel a{
         font-size: 13px;
     }
 }
